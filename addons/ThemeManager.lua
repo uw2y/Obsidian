@@ -505,11 +505,10 @@ end
 
 function ThemeManager:LoadDefault()
     local ThemeName, Success, FetchErrorMessage = ThemeManager:GetDefaultTheme()
-    if not Success or FetchErrorMessage then
-        if FetchErrorMessage ~= "Default theme is not set" then
-            ThemeManager.Library:Notify(string.format("Failed to apply default theme: %s", FetchErrorMessage))
-        end
 
+    if not Success then
+        ThemeManager:ApplyTheme("Default")
+        ThemeManager.Library.Options.ThemeManager_ThemeList:SetValue("Default")
         return
     end
 
