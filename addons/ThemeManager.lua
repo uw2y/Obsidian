@@ -59,7 +59,7 @@ local ThemeManager = {
     BuiltInThemes = {
         ["Default"] = {
             1,
-            { FontColor = "ffffff", MainColor = "191919", AccentColor = "7d55ff", BackgroundColor = "0f0f0f", OutlineColor = "282828", BackgroundImage = "" },
+           { FontColor = "EEEFFF", MainColor = "171729", AccentColor = "8B86FF", BackgroundColor = "090910", OutlineColor = "302E4D", BackgroundImage = "" },
         },
         ["BBot"] = {
             2,
