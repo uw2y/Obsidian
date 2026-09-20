@@ -394,9 +394,9 @@ local Templates = {
         UnlockMouseWhileOpen = true,
 
         EnableSidebarResize = false,
-        EnableCompacting = true,
+        EnableCompacting = false,
         DisableCompactingSnap = false,
-        SidebarCompacted = true,
+        SidebarCompacted = false,
         MinContainerWidth = 256,
 
         --// Snapping \\--
